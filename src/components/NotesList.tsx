@@ -11,7 +11,7 @@ const NotesList: React.FunctionComponent< NotesListProps> = (props) => {
     const {notes , setNotes} = props;
     const handleDelete = (id : number)=>{
         console.log(id);
-        setNotes(notes.filter(i => i.id != id))
+        setNotes(notes.filter(i => i.id !== id))
 
     }
     const showNotes = () : JSX.Element[] =>{
